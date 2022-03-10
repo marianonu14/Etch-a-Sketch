@@ -59,6 +59,15 @@ html {
     border-radius: 50px;
 }
 
+.contenedor-aside .btn:hover {
+    transform: scale(1.05);
+    background-color: #4FBDBA;
+}
+
+.btn .active {
+    background-color: #4FBDBA;
+}
+
 .btn-color {
 	display: flex;
     flex-direction: column;
@@ -81,11 +90,6 @@ html {
 }
 
 .contenedor-aside .btn-color:hover {
-    transform: scale(1.05);
-    background-color: #4FBDBA;
-}
-
-.contenedor-aside .btn:hover {
     transform: scale(1.05);
     background-color: #4FBDBA;
 }
