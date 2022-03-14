@@ -95,6 +95,8 @@ html {
 }
 
 .contenendor-cuadricula {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     background-color: aliceblue;
     height: 90%;
     width: 45%;

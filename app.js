@@ -4,8 +4,6 @@ const firstGrid = document.querySelector('#first-grid');
 const secondGrid = document.querySelector('#second-grid');
 const thirdGrid = document.querySelector('#third-grid');
 const resetGrid = document.querySelector('#reset');
-const newDiv = document.createElement("div");
-newDiv.textContent = "Esto es un DIV"
 
 let selectColor = '#000000';
 
@@ -19,20 +17,29 @@ contenedorPrincipal.addEventListener('mousemove', () => {
   });
 
 firstGrid.addEventListener('click', () => {
-    createDiv(firstGrid, 100);
+    createDiv(100);
+  });
+
+secondGrid.addEventListener('click', () => {
+    createDiv(400);
+  });
+
+thirdGrid.addEventListener('click', () => {
+    createDiv(900);
   });
 
 resetGrid.addEventListener('click', () => {
     contenedorPrincipal.style.backgroundColor = '#FFFFFF';
     btnColor.value = '#000000';
     selectColor = '#000000';
+    createDiv(100);
   });
   
-function createDiv(grid, cant) {
+function createDiv(cant) {
     for (let step = 0; step < cant; step++) {
-    //contenedorPrincipal.appendChild(newDiv);
-    console.log('Creando Div');
-    grid.disabled = true;
-    grid.classList.add('active')
+    const newDiv = document.createElement("div");
+    newDiv.textContent = "DIV";
+    newDiv.classList.add("Grid");
+    contenedorPrincipal.appendChild(newDiv);
    };
 };
