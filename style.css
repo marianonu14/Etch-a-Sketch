@@ -43,6 +43,9 @@ html {
     width: 30%;
 }
 
+.active {
+    color: #bd4fb7;
+}
 
 .contenedor-aside .btn {
     background-color: #35858B;
@@ -61,10 +64,6 @@ html {
 
 .contenedor-aside .btn:hover {
     transform: scale(1.05);
-    background-color: #4FBDBA;
-}
-
-.btn .active {
     background-color: #4FBDBA;
 }
 
@@ -104,7 +103,7 @@ html {
 }
 
 .grid {
-    border: 0.05px groove grey;
+    border: 0.05px groove #4FBDBA;
 }
 
 footer {

@@ -13,32 +13,47 @@ btnColor.addEventListener('change', (e) => {
 
 
 firstGrid.addEventListener('click', () => {
+    contenedorPrincipal.innerHTML = ''
+    
     createDiv(10);
-    firstGrid.disabled = true;
+    
+    firstGrid.classList.add("active");
+    secondGrid.classList.remove("active");
+    thirdGrid.classList.remove("active");
   });
 
 secondGrid.addEventListener('click', () => {
+    contenedorPrincipal.innerHTML = ''
+    
     createDiv(20);
-    secondGrid.disabled = true;
+
+    firstGrid.classList.remove("active");
+    secondGrid.classList.add("active");
+    thirdGrid.classList.remove("active");
   });
 
 thirdGrid.addEventListener('click', () => {
+    contenedorPrincipal.innerHTML = ''
+    
     createDiv(30);
-    thirdGrid.disabled = true;
+
+    firstGrid.classList.remove("active");
+    secondGrid.classList.remove("active");
+    thirdGrid.classList.add("active");
   });
 
 resetGrid.addEventListener('click', () => {
-    contenedorPrincipal.style.backgroundColor = '#FFFFFF';
-    btnColor.value = '#000000';
-    selectColor = '#000000';
+    contenedorPrincipal.innerHTML = ''
   });
   
+
 function createDiv(cant) {
 
   for (let step = 0; step < cant*cant; step++) {
     const newDiv = document.createElement("div");
     
     newDiv.classList.add("Grid");
+    
     contenedorPrincipal.style.gridTemplateColumns = `repeat(${cant}, 1fr)`
     
     newDiv.addEventListener('mousemove', () => {
