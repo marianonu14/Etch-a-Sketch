@@ -96,12 +96,15 @@ html {
 
 .contenendor-cuadricula {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
     background-color: aliceblue;
     height: 90%;
     width: 45%;
     margin: auto;
     border-radius: 5px;
+}
+
+.grid {
+    border: 0.05px groove grey;
 }
 
 footer {
