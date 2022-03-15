@@ -17,7 +17,7 @@ firstGrid.addEventListener('click', () => {
     
     createDiv(10);
     
-    firstGrid.style.backgroundColor = "#98bfc2";
+    firstGrid.style.backgroundColor = "#8cccca";
     secondGrid.style.backgroundColor = "#35858B";
     thirdGrid.style.backgroundColor = "#35858B";
   });
@@ -28,7 +28,7 @@ secondGrid.addEventListener('click', () => {
     createDiv(20);
 
     firstGrid.style.backgroundColor = "#35858B";
-    secondGrid.style.backgroundColor = "#98bfc2";
+    secondGrid.style.backgroundColor = "#8cccca";
     thirdGrid.style.backgroundColor = "#35858B";
   });
 
@@ -39,11 +39,14 @@ thirdGrid.addEventListener('click', () => {
 
     firstGrid.style.backgroundColor = "#35858B";
     secondGrid.style.backgroundColor = "#35858B";
-    thirdGrid.style.backgroundColor = "#98bfc2";
+    thirdGrid.style.backgroundColor = "#8cccca";
   });
 
 resetGrid.addEventListener('click', () => {
     contenedorPrincipal.innerHTML = ''
+    firstGrid.style.backgroundColor = "#35858B";
+    secondGrid.style.backgroundColor = "#35858B";
+    thirdGrid.style.backgroundColor = "#35858B";
   });
   
 
