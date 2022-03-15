@@ -17,9 +17,9 @@ firstGrid.addEventListener('click', () => {
     
     createDiv(10);
     
-    firstGrid.classList.add("active");
-    secondGrid.classList.remove("active");
-    thirdGrid.classList.remove("active");
+    firstGrid.style.backgroundColor = "#98bfc2";
+    secondGrid.style.backgroundColor = "#35858B";
+    thirdGrid.style.backgroundColor = "#35858B";
   });
 
 secondGrid.addEventListener('click', () => {
@@ -27,9 +27,9 @@ secondGrid.addEventListener('click', () => {
     
     createDiv(20);
 
-    firstGrid.classList.remove("active");
-    secondGrid.classList.add("active");
-    thirdGrid.classList.remove("active");
+    firstGrid.style.backgroundColor = "#35858B";
+    secondGrid.style.backgroundColor = "#98bfc2";
+    thirdGrid.style.backgroundColor = "#35858B";
   });
 
 thirdGrid.addEventListener('click', () => {
@@ -37,9 +37,9 @@ thirdGrid.addEventListener('click', () => {
     
     createDiv(30);
 
-    firstGrid.classList.remove("active");
-    secondGrid.classList.remove("active");
-    thirdGrid.classList.add("active");
+    firstGrid.style.backgroundColor = "#35858B";
+    secondGrid.style.backgroundColor = "#35858B";
+    thirdGrid.style.backgroundColor = "#98bfc2";
   });
 
 resetGrid.addEventListener('click', () => {
